@@ -32,7 +32,7 @@ function page() {
         refresh
       />
 
-      <section id='intro' className=' md:h-screen h-[80vh] w-screen'>
+<section id='intro' className=' md:h-screen h-[80vh] w-screen'>
         <div className=' w-full h-full flex items-center justify-center'>
           <div>
             {/* My Photo */}
@@ -94,7 +94,7 @@ function page() {
         </div>
       </section>
 
-      <section className=' w-full md:h-[70vh] md:p-0 h-max bg-black marquee-sect' id='technologies'>
+      <section className=' w-full md:h-[70vh] md:p-0 h-max bg-black marquee-sect overflow-hidden' id='technologies'>
         <MyMarquee />
       </section>
 
@@ -140,14 +140,11 @@ function page() {
 
       </section>
 
-      <section id='projects' className='w-full md:p-32 md:pt-20 pl-10 pr-10 pt-10 relative'>
+      <section id='projects' className='w-full md:p-32 md:pt-20 pl-10 pr-10 relative overflow-hidden'>
         <h1 className={`${inter.className} text-4xl font-extrabold leading-tight bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-500 mb-10`}>Some of my projects</h1>
 
 
-        {/* Projects */}
-        <Suspense fallback={<span className="loading loading-bars loading-lg"></span>}>
           <Projects />
-        </Suspense>
 
         <Spotlight
           className="-top-40 left-0 md:left-60 md:-top-20"
